@@ -8,16 +8,19 @@ import Link from 'next/link'
 import Footer from '@/components/ui/footer'
 
 
-export default function Component({ setShowOptions }) {
+export default function Component() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-background to-secondary/20 px-4 dark:from-neutral-950 dark:to-black">
+      <Link href="/">
       <Button
         variant="ghost"
         className="absolute top-4 left-4 p-2"
-        onClick={() => setShowOptions(false)}
+        // onClick={() => setShowOptions(false)}
       >
+        
         <ArrowLeft className="h-6 w-6" />
       </Button>
+      </Link>
       <h1 className="text-3xl font-bold mb-8 text-center dark:text-white">Choose Your Role</h1>
       <div className="flex flex-col sm:flex-row gap-8 w-full max-w-2xl">
         <div className="flex-1 rounded-lg bg-white dark:bg-neutral-900 shadow-lg transition-transform hover:scale-105">
