@@ -90,7 +90,7 @@ export default function CTA() {
   )
 }
 
-function AnimatedCard({ icon, title, description, features, isActive, onClick, duration }) {
+function AnimatedCard({  title, description, features, isActive, onClick, duration }) {
   return (
     <motion.div 
       className={`p-4 flex items-start space-x-2 cursor-pointer relative overflow-hidden
